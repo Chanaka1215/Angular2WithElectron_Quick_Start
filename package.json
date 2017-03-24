@@ -1,0 +1,51 @@
+{
+  "name": "Angular2withElectronQuickStart",
+  "version": "0.0.1",
+  "dsescription":"in order to create a cross platform application",
+  "main":"main.ts",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"electron main.js\"",
+    "clean": "rm -Rf *.log *.js *.map app/*.js app/*.map",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "postinstall": "typings install",
+    "package": "npm run build && electron-packager . --out=dist --platform=darwin --arch=x64 --overwrite --icon=app/assets/img/Icon.png"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chanaka1215/Angular2WithElectron_Quick_Start.git"
+  },
+  "keywords": [
+    "Canaka1215",
+    "S.D.N  Chanaka Fernando",
+    "Electron",
+    "Angular 2",
+    "Electron",
+    "quick Start"
+  ],
+  "author": "S.D.N Chanaka Fernando",
+  "devDependencies": {
+    "@types/hammerjs": "^2.0.33",
+    "concurrently": "^3.0.0",
+    "electron-packager": "^8.4.0",
+    "typescript": "~2.1.4",
+    "typings": "^2.0.0"
+  },
+  "dependencies": {
+    "@angular/animations": "^4.0.0",
+    "@angular/common": "^2.4.1",
+    "@angular/compiler": "^2.4.1",
+    "@angular/core": "^2.4.0",
+    "@angular/forms": "^2.4.1",
+    "@angular/http": "^2.4.1",
+    "@angular/material": "^2.0.0-beta.2",
+    "@angular/platform-browser": "^2.4.1",
+    "@angular/platform-browser-dynamic": "^2.4.1",
+    "electron": "^1.4.13",
+    "hammerjs": "^2.0.8",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "^5.0.2",
+    "systemjs": "^0.19.41",
+    "zone.js": "^0.7.2"
+  }
+}
