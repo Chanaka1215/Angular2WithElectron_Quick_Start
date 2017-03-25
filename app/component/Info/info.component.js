@@ -9,16 +9,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
  * Created by Chanaka Fernando on 3/25/2017.
  */
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var InfoComponent = (function () {
+    function InfoComponent() {
     }
-    return AppComponent;
+    return InfoComponent;
 }());
-AppComponent = __decorate([
+InfoComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: "<router-outlet></router-outlet>"
+        moduleId: module.id,
+        selector: 'info',
+        templateUrl: 'info.component.html'
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], InfoComponent);
+exports.InfoComponent = InfoComponent;
+//# sourceMappingURL=info.component.js.map

@@ -1,6 +1,6 @@
 {
   "name": "Angular2withElectronQuickStart",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "dsescription":"in order to create a cross platform application",
   "main":"main.ts",
   "scripts": {
@@ -19,7 +19,7 @@
     "Canaka1215",
     "S.D.N  Chanaka Fernando",
     "Electron",
-    "Angular 2",
+    "Angular2",
     "Electron",
     "quick Start"
   ],
@@ -27,6 +27,7 @@
   "devDependencies": {
     "@types/hammerjs": "^2.0.33",
     "concurrently": "^3.0.0",
+    "lite-server": "^2.2.2",
     "electron-packager": "^8.4.0",
     "typescript": "~2.1.4",
     "typings": "^2.0.0"
@@ -38,6 +39,7 @@
     "@angular/core": "^2.4.0",
     "@angular/forms": "^2.4.1",
     "@angular/http": "^2.4.1",
+    "@angular/router": "~3.4.0",
     "@angular/material": "^2.0.0-beta.2",
     "@angular/platform-browser": "^2.4.1",
     "@angular/platform-browser-dynamic": "^2.4.1",

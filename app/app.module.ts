@@ -4,18 +4,27 @@
 import { NgModule }      	from '@angular/core';
 import { BrowserModule } 	from '@angular/platform-browser';
 import { FormsModule }   	from '@angular/forms';
+import {HttpModule}         from "@angular/http";
+import {WebRouting}         from "./app.routing";
 import { AppComponent }  	from './app.component';
 import 'hammerjs';
-import {WelcomeComponent} from "./welcome/welcome.component";
+
+
+import {WelcomeComponent} from "./component/welcome/welcome.component";
+import {InfoComponent} from "./component/Info/info.component";
+
 
 @NgModule({
     imports:[
         BrowserModule,
-        FormsModule
-    ],
+        FormsModule,
+        WebRouting,
+        HttpModule
+],
     declarations:[
         AppComponent,
-        WelcomeComponent
+        WelcomeComponent,
+        InfoComponent
     ],
     bootstrap:[AppComponent]
 })

@@ -5,6 +5,6 @@ import { Component }    from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    template:`<welcome></welcome>`
+    template: `<router-outlet></router-outlet>`
 })
 export class AppComponent { }
